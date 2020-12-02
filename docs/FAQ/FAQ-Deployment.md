@@ -49,12 +49,12 @@ Here are common questions about installation, regardless of the deployment metho
 
 ### How much does it cost to run BTCPay Server?
 
-BTCPay is a 100% free and open-source software. We do not charge you anything.
+**BTCPay is a 100% free and open-source software**. We do not charge you anything.
 However, to run it, you should host it. You can run it as a self-hosted solution on your own local server, or use a cloud hosting provider, which is what a majority of users do. Advanced users can run BTCPay on [their own hardware](../HardwareDeployment.md). Less technical users can use [Hardware As A Service options](../HardwareAsAService.md). If you do not wish to host your own server, you can use a free [Third-Party Host](../ThirdPartyHosting.md). Visit our [Deployment Page](../Deployment.md) for more information on the various ways in which you can run BTCPay.
 
 ### What are the minimal requirements for BTCPay?
 
-If you would like to run Bitcoin and Lightning Network nodes, the minimal requirements are :
+If you would like to run Bitcoin and Lightning Network nodes, the **minimal requirements** are :
 
 * 2GB Ram
 * 80 GB of storage [with enabled pruning](../Docker/README.md#generated-docker-compose)
@@ -80,7 +80,7 @@ Yes. BTCPay is not limited to the documented deployment methods. You can use whi
 
 ### Are there free hosts where I can test?
 
-On a self-hosted BTCPay, an unlimited amount of users and stores can be attached. Some community users have open registration on their servers for others to use their BTCPay Server mainly for testing and learning. Most of them are community-driven and free. See the [third-party hosts documentation](../ThirdPartyHosting.md) for more information.
+On a self-hosted BTCPay, an **unlimited amount of users and stores** can be attached. Some community users have open registration on their servers for others to use their BTCPay Server mainly for testing and learning. Most of them are community-driven and free. See the [third-party hosts documentation](../ThirdPartyHosting.md) for more information.
 
 ### After initial deployment, I can't register and I don't have a login yet?
 
@@ -126,7 +126,7 @@ If you want to know more about the philosophy behind all this, you can read our 
 
 ### How to access the .onion address without clearnet?
 
-To see the .onion address of your BTCPay instance without accessing it through the clearnet and clicking the Tor logo in top left corner, apply the following command:
+To see the **.onion address of your BTCPay** instance without accessing it through the clearnet and clicking the Tor logo in top left corner, apply the following command:
 
 ```bash
 cat /var/lib/docker/volumes/generated_tor_servicesdir/_data/BTCPayServer/hostname
@@ -134,7 +134,7 @@ cat /var/lib/docker/volumes/generated_tor_servicesdir/_data/BTCPayServer/hostnam
 
 ### How can I modify or deactivate environment variables?
 
-In BTCPay, various options are activated through environment variables. You can modify or delete any of these options using command lines by exporting the new value with `export {environment variable}="{value}"` and then running `. ./btcpay-setup.sh -i` again.
+In BTCPay, various options are activated through **environment variables**. You can modify or delete any of these options using command lines by exporting the new value with `export {environment variable}="{value}"` and then running `. ./btcpay-setup.sh -i` again.
 
 For example, let's say I want to deactivate Tor for my BTCPay server:
 
@@ -207,7 +207,7 @@ ONLY USE ON TRUSTED LAN OR WITH FIREWALL RULES WHITELISTING SPECIFIC HOSTS
 
 ### How can I renew my SSL certificate?
 
-If your SSL certificate has expired for your BTCPay Server, you can manually renew it. For Docker deployments the easiest way to do this is to [restart the container](../Troubleshooting.md#1-3-restarting-a-service) named `letsencrypt-nginx-proxy-companion` on your server. 
+If your **SSL certificate has expired for your BTCPay Server**, you can manually renew it. For Docker deployments the easiest way to do this is to [restart the container](../Troubleshooting.md#1-3-restarting-a-service) named `letsencrypt-nginx-proxy-companion` on your server. 
 
 ### Can I use an existing Nginx server as a reverse proxy with SSL termination?
 
@@ -318,7 +318,7 @@ Here you can find common questions and solutions to BTCPay web-deployments.
 
 ### Can I run BTCPay on my home computer?
 
-Similar to the requirements for hosting a website, a web server is required for a BTCPay Server instance. While it is possible to run BTCPay Server locally on your PC, it would have to meet the minimal requirements and also run 24/7 if you don't want interruptions of service. You might also not want to expose your home IP address for the activity related to BTCPay Server payments. For all these reasons, while local hosting is suitable for testing, it's not a viable solution for production. A Virtual Private Server (VPS) is commonly used to address these problems.
+Similar to the requirements for hosting a website, a web server is required for a BTCPay Server instance. While it is possible to **run BTCPay Server locally on your PC**, it would have to meet the minimal requirements and also run 24/7 if you don't want interruptions of service. You might also not want to expose your home IP address for the activity related to BTCPay Server payments. For all these reasons, while local hosting is suitable for testing, it's not a viable solution for production. A Virtual Private Server (VPS) is commonly used to address these problems.
 
 ### LunaNode web-deployment
 
