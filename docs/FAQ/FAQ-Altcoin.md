@@ -1,6 +1,6 @@
 # Altcoins Frequently Asked Questions
 
-This page answers some of the common questions about alternative cryptocurrencies - altcoins.
+This page answers some of the **common questions about alternative cryptocurrencies** - altcoins.
 
 * [Which coins does BTCPay Server support?](./FAQ-Altcoin.md#which-coins-does-btcpay-server-support)
 * [Can an XYZ coin be added in BTCPay?](./FAQ-Altcoin.md#can-an-xyz-coin-be-added-in-btcpay)
@@ -10,7 +10,7 @@ This page answers some of the common questions about alternative cryptocurrencie
 
 ## Which coins does BTCPay Server support?
 
-Bitcoin is the only focus of the project and its core developers. However, opt in integrations are present for several altcoins:
+Bitcoin is the only focus of the project and its core developers. However, opt in integrations are present for several **altcoins**:
 
 - BGold (BTG) (also known as Bitcoin Gold)
 - BPlus (XBC) (also known as Bitcoin Plus)
