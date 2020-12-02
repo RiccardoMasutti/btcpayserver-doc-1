@@ -23,21 +23,21 @@ This page contains general questions and answers about BTCPay. What it is, how i
 
 ## What is BTCPay Server?
 
-BTCPay Server is a free and open-source cryptocurrency payment processor which allows you to receive payments in Bitcoin (on-chain and via the Lightning Network) and altcoins directly, with no fees, transaction cost or a middleman.
+**BTCPay Server is a free and open-source cryptocurrency payment processor** which allows you to **receive payments in Bitcoin** (on-chain and via the Lightning Network) and altcoins directly, with no fees, transaction cost or a middleman.
 
-BTCPay is a non-custodial invoicing system which eliminates the involvement of a third-party. Payments with BTCPay go directly to your wallet, which increases the privacy and security. Your private keys are never required to receive payments to your BTCPay Server. There is [no address re-use](#how-does-btcpay-create-a-new-address-for-each-invoice) since each invoice uses a new address for receiving payments to your wallet.
+BTCPay is a non-custodial **invoicing system** which eliminates the involvement of a third-party. Payments with BTCPay go directly to your wallet, which increases the privacy and security. Your private keys are never required to receive payments to your BTCPay Server. There is [no address re-use](#how-does-btcpay-create-a-new-address-for-each-invoice) since each invoice uses a new address for receiving payments to your wallet.
 
 ## Why should I choose BTCPay over other processors?
 
 The most significant advantage of BTCPay over other processors is that it is entirely free and open-source, non-custodial software, created by the community. While most of the other processors hold your Bitcoins, BTCPay allows you to receive payments P2P, directly to your software or hardware wallet.
 
-BTCPay is a self-hosted software. This means that you are your own payment processor. There are no subscriptions, no transaction fees. There's no third-party involvement which significantly increases the censorship-resistance, privacy, and security for you and your customers. Furthermore, BTCPay enables you to become a processor yourself, so that you can offer different packages and help spread the adoption locally or globally.
+BTCPay is a self-hosted software. This means that you are **your own payment processor**. There are no subscriptions, no transaction fees. There's no third-party involvement which significantly increases the censorship-resistance, privacy, and security for you and your customers. Furthermore, BTCPay enables you to become a processor yourself, so that you can offer different packages and help spread the adoption locally or globally.
 
 With BTCPay, you are your own bank.
 
 ## Why is everyone so excited about BTCPay?
 
-The community is excited about BTCPay and often recommends it to merchants or content creators because it offers a direct way for store-owners and charities to receive Bitcoin payments, which significantly improves the privacy of the customers/donors.
+The community is excited about BTCPay and often recommends it to merchants or content creators because it offers a **direct way for store-owners and charities to receive Bitcoin payments**, which significantly improves the privacy of the customers/donors.
 
 BTCPay doesn't compromise on censorship-resistance, which is one of the main features of Bitcoin. Besides that, being free and open-source it gives an excellent opportunity for developers to build things and integrations on top of BTCPay.
 
@@ -70,21 +70,21 @@ If you do not have a store, but want to create one, read [How to Create an Onlin
 
 ## Why can't I just give my Bitcoin address to a buyer?
 
-Re-using an address for receiving payments is a privacy issue. Providing a different address manually to each customer is not an optimal solution. Imagine having to send a unique e-mail to everyone that wants to pay you with cryptocurrency.
+Re-using an address for receiving payments is a **privacy issue**. Providing a different address manually to each customer is not an optimal solution. Imagine having to send a unique e-mail to everyone that wants to pay you with cryptocurrency.
 
-BTCPay solves the address re-use issue. It automates the checkout process for the merchant by creating a new invoice with a unique address created from the merchant's wallet, each time a customer pays using BTCPay. If you are using an integration with an e-commerce store, BTCPay Server integrates into your checkout process, and customers can pay you in Bitcoin or altcoins in a few clicks, just like any other traditional payment option.
+BTCPay solves the address re-use issue. It automates the checkout process for the merchant by creating a **new invoice with a unique address** created from the merchant's wallet, each time a customer pays using BTCPay. If you are using an integration with an e-commerce store, BTCPay Server integrates into your checkout process, and customers can pay you in Bitcoin or altcoins in a few clicks, just like any other traditional payment option.
 
 After a customer makes a payment, the BTCPay Server software notifies your store that the order has been paid/completed. Depending on the e-commerce software you're using, it can also change the order status. All you have to worry about is getting items shipped, leave the invoicing and payment processing to BTCPay.
 
 ## How does BTCPay create a new address for each invoice?
 
-BTCPay Server includes an important feature which eliminates the known privacy issue of address re-use. It does this by providing a new address each time an invoice is requested for payment. This is all done automatically and the merchant does not need to keep track of which addresses belong to which wallet, store, etc. BTCPay Server organizes all the payment information in a detailed invoicing system for the merchant. 
+BTCPay Server includes an important **feature which eliminates the known privacy issue of address re-use**. It does this by providing a new address each time an invoice is requested for payment. This is all **done automatically** and the merchant does not need to keep track of which addresses belong to which wallet, store, etc. BTCPay Server organizes all the payment information in a detailed invoicing system for the merchant. 
 
 The way it works is fairly simple. Merchants connect a wallet to each of their stores that they want to receive payments to. The invoices produced for store payments are linked directly to the merchant's connected wallet. The invoice addresses are derived from the [xpubkey](https://bitcointalk.org/index.php?topic=2828777.0) of the wallet associated with the store. The software only needs your extended public key of a wallet to produce new addresses for each payment. These addresses are monitored by BTCPay Server as they move through the blockchain. The status of the payments to those addresses are detailed in the merchant's invoice page for each store. 
 
 ## Does BTCPay need my private key?
 
-Private keys are not required for using BTCPay with an existing wallet. The fact that BTCPay Server does not require access to your master private key for on-chain transactions is a huge security advantage. Even if your server gets hacked, your funds from the on-chain transactions are always safe. Securing your on-chain funds comes down to [securing your wallet](https://btcinformation.org/en/secure-your-wallet). Using an [existing wallet with BTCPay Server](../WalletSetup.md#use-an-existing-wallet) only requires the public key from your wallet.
+**Private keys are not required for using BTCPay** with an existing wallet. The fact that BTCPay Server does not require access to your master private key for on-chain transactions is a huge security advantage. Even if your server gets hacked, **your funds from the on-chain transactions are always safe**. Securing your on-chain funds comes down to [securing your wallet](https://btcinformation.org/en/secure-your-wallet). Using an [existing wallet with BTCPay Server](../WalletSetup.md#use-an-existing-wallet) only requires the public key from your wallet.
 
 It is possible to generate new wallets using BTCPay Server which are hot wallets stored on the server. If you have a lightning node, BTCPay technically has access to the keys (macaroons) of your Lightning funds as well. If these are features that you would like to use, be sure to understand the [security implications and the risks](../HotWallet.md#security-implications) associated with these experimental features. 
 
@@ -121,7 +121,7 @@ If you encountered an issue or have a feature request, please [open an issue on 
 
 ## How can I contribute to BTCPay?
 
-There are many ways in which you can contribute to an open-source project like BTCPay. 
+There are many ways in which you can **contribute to an open-source project like BTCPay**. 
 
 The easiest way is to use the software, provide feedback and report any bugs or issues you or your customers encounter. If you're a developer, you can help us develop and improve the software by contributing in any of the BTCPay Server [GitHub repositories](https://github.com/btcpayserver). Translating BTCPay into your native language on [Transifex](https://www.transifex.com/btcpayserver/btcpayserver/), helping us with documentation and writing are ways in which you can help us out, even if you're not a developer or tech-savvy. We appreciate every contributor to the project. 
 
