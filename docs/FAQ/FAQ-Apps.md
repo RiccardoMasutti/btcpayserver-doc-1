@@ -1,6 +1,6 @@
 # BTCPay Apps Frequently Asked Questions
 
-This document covers frequently asked questions about the Apps in BTCPay.
+This document covers **frequently asked questions** about the Apps in BTCPay.
 
 * [What are the Apps in BTCPay?](#what-are-the-apps-in-btcpay)
 * [Is there a limit on the number of Apps I can create?](#is-there-a-limit-on-the-number-of-apps-i-can-create)
@@ -15,7 +15,7 @@ This document covers frequently asked questions about the Apps in BTCPay.
 
 ## What are the Apps in BTCPay?
 
-Apps are plugins (features) you can use to expand the use case of your BTCPay.
+Apps are **plugins** (features) you can use to expand the use case of your BTCPay.
 
 ## Is there a limit on the number of Apps I can create?
 
@@ -27,8 +27,8 @@ Yes. Please read our [guide on creating the POS app](../WhatsNext.md#creating-th
 
 ## How can I use BTCPay in a physical store?
 
-You can use our Point of Sale (PoS) app. When you create a PoS app within BTCPay Server, it will be publicly accessible via a URL where checkout buttons for products you’ve created for your PoS will be displayed.
-To have a physical PoS, the easiest solution (currently) is to create a PoS App in BTCPay and display it on any web device such as a phone, tablet or pc.
+You can use our **Point of Sale (PoS) app**. When you create a PoS app within BTCPay Server, it will be publicly accessible via a URL where checkout buttons for products you’ve created for your PoS will be displayed.
+To have a **physical PoS**, the easiest solution (currently) is to create a PoS App in BTCPay and display it on any web device such as a phone, tablet or pc.
 
 Please follow our detailed guide on how to use our [PoS App on a mobile device](https://blog.btcpayserver.org/bitcoin-pos/). Also note that Section 2.3 Connecting a Wallet is covered much more in-depth here in the [wallet section](../WalletSetup.md).
 
@@ -38,7 +38,7 @@ It is very easy to customize the look of the Point of Sale app. [Follow this gui
 
 ## What is a Payment Button?
 
-The Payment Button is a simple and customizable HTML button you can create and embed into your website. To create a payment button, [follow this guide](../WhatsNext.md#creating-the-point-of-sale-app). 
+The **Payment Button** is a simple and customizable HTML button you can create and embed into your website. To create a payment button, [follow this guide](../WhatsNext.md#creating-the-point-of-sale-app). 
 
 ## How to create a Pay Button with a custom amount?
 
@@ -52,8 +52,8 @@ However, you can use a work-around:
 * Click on the `Embed payment button linking to PoS item` at the bottom of the page and copy the expanded code. Paste it into html page of your website.
 * Remove the extra fields you do not need, especially `<input name="price" type="hidden" value="10" />` so that button redirects to the point of sale.
 
-![Custom Amount Pay Button](../img/BTCPayPayButtonDynamic2.png)
-![Custom Amount Pay Button](../img/BTCPayPayButtonDynamic.png)
+![Custom Amount Pay Button](../img/BTCPayPayButtonDynamic2.png "Custom Amount Pay Button")
+![Custom Amount Pay Button](../img/BTCPayPayButtonDynamic.png "Custom Amount Pay Button")
 
 ## How to map a domain name to an app?
 
@@ -78,12 +78,12 @@ export BTCPAY_ADDITIONAL_HOSTS="mybtcpaypos.com,subdomain.domain2.com,domain3.co
 
 Finally, in Server Settings > Policies click on the `Map specific domains to specific apps`
 
-![App domain mapping](../img/domainmapping1.png)
+![App domain mapping](../img/domainmapping1.png "App domain mapping")
 
 
 Enter domain name, select a previously created app from the drop down menu and click `save` to map the app to specific domain.
 
-![App domain mapping](../img/domainmapping2.png)
+![App domain mapping](../img/domainmapping2.png "App domain mapping")
 
 If any of the additionally added hosts do not have a properly configured DNS, Let's Encrypt will not be able to renew the certificate for any of the domains, including the main domain. If you're using additional hosts and facing https issues with the main domain, try removing a domain from the `BTCPAY_ADDITIONAL_HOSTS` and re-run the setup. The https issue also occurs if [Dynamic DNS](../DynamicDNS.md) has not been renewed and is configured as an additional host.
 
@@ -91,9 +91,9 @@ If for any reason, you want an app to be on the same domain as your BTCPay Serve
 
 ## How to redirect to another site after payment?
 
-Point of Sale apps allow redirecting customers to any URL after an invoice is paid. Modify the redirect functionality in Apps > Settings
+Point of Sale apps allow **redirecting customers** to any URL after an invoice is paid. Modify the redirect functionality in Apps > Settings
 
-![Set Point of Sale Redirects](../img/point-of-sale/AppRedirect.png)
+![Set Point of Sale Redirects](../img/point-of-sale/AppRedirect.png "Set Point of Sale Redirects")
 
 In PoS settings these are the following options for redirects on paid invoices: 
 
@@ -115,11 +115,11 @@ Notes:
 
 ## How to integrate WooCommerce Store into a BTCPay Crowdfund app?
 
-If you want to provide a way for your backers to receive digital files and physical products, you can embed WooCommerce store into your Crowdfunding app.
+If you want to provide a way for your backers to receive digital files and physical products, you can **embed WooCommerce store into your Crowdfunding app**.
 
-![Crowdfunding WooCommerce Integration Preview](../img/CrowdfundingWoo.gif)
+![Crowdfunding WooCommerce Integration Preview](../img/CrowdfundingWoo.gif "BTCPay WooCommerce Crowdfunding")
 
-The following tutorial assumes you have a semi-advanced understanding of BTCPay, WordPress and WooCommerce.
+The following tutorial assumes you have a semi-advanced understanding of **BTCPay, WordPress and WooCommerce**.
 
 ### Requirements
 
@@ -133,7 +133,7 @@ The following tutorial assumes you have a semi-advanced understanding of BTCPay,
 
 #### Optional WordPress Plugins
 
-The following plugins are recommended, but not required. You don't have to use them if you're an advanced WordPress user.
+The following plugins are recommended, but not required. You don't have to use them if you're an advanced **WordPress** user.
 
 * [Flexible Checkout Fields](https://wordpress.org/plugins/flexible-checkout-fields/) (to edit checkout and remove redundant checkout fields in Woo)
 * [WooCommerce Direct Checkout](https://wordpress.org/plugins/woocommerce-direct-checkout/) (remove redundant steps in the checkout process and make pledging quicker)
